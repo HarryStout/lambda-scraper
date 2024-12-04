@@ -31,8 +31,8 @@ def scraper():
     
 def scraper_handler(event, context):
     if event['Success'] == True:
-        logger.info("All is OK. Starting Scraper.")
         scraper()
+        logger.info("All is OK. Starting Scraper.")
         return {
             'statusCode': 200,
             'body': event
