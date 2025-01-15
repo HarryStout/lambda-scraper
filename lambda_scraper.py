@@ -5,7 +5,7 @@ import newspaper
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-def scraper():
+def scraper(event, context):
     url = 'https://www.nytimes.com/live/2021/10/25/us/biden-spending-bill-negotiations'
     
     article = newspaper.Article(url=url, language='en')
