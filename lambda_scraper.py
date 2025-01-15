@@ -2,6 +2,8 @@ import json
 import logging
 import newspaper
 
+#comment w
+
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
